@@ -1,0 +1,29 @@
+@startuml letter-organisms
+skinparam groupInheritance 3
+title Letter Organisms
+
+Enum CellTypes{
+    normal_cell    
+}
+
+class Cell{
+
+}
+
+class ScreenWriter{
+
+}
+
+class CellularAutomata{
+
+}
+
+class Simulation{
+
+}
+
+Simulation *-- CellularAutomata
+Simulation *-- ScreenWriter
+CellularAutomata "1"*=="1.*" Cell
+
+
